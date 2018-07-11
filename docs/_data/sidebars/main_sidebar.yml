@@ -50,6 +50,6 @@ entries:
       external_url: https://www.github.com/sci-f/builder
       output: web, pdf
 
-    - title: The Experiment Contiainer Builder (CI)
+    - title: The Experiment Container Builder (CI)
       external_url: https://www.github.com/expfactory/builder
       output: web, pdf
