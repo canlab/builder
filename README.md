@@ -1,13 +1,10 @@
 # Experiment Factory Builder
 
  - [![CircleCI](https://circleci.com/gh/expfactory/builder.svg?style=svg)](https://circleci.com/gh/expfactory/builder)
- - [Documentation](https://expfactory.github.io/builder)
- - [Writeup](https://vsoch.github.io/2018/experiment-builder)
-
-![docs/assets/img/circle.png](docs/assets/img/circle.png)
 
 This is the experiment factory builder. The experiment folders that you add to the folder
-[experiments](experiments) will be built into an experiment factory Docker Container.
+[experiments](experiments) will be built into an experiment factory Docker Container. I'm hoping to transofrm this into a [CircleCi Orb](https://github.com/CircleCI-Public/config-preview-sdk/) so it can better serve as a service template.
+
 Generally, you should do the following:
 
   1. Put experiment subfolders in [experiments](experiments). Each should be served statically, and submit to `/next`
