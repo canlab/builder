@@ -214,7 +214,7 @@ workflows:
       - deploy:
           requires:
             - build
-            - test_apps
+            - verify_experiments
           filters:
             branches:
               only: master
