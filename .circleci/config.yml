@@ -43,8 +43,6 @@ jobs:
             fi
             docker images
       - run:
-          name: 
-      - run:
           name: Build Docker Image
           no_output_timeout: 60m
           command: |
