@@ -1,7 +1,7 @@
 ---
 title: Experiments
 sidebar: main_sidebar
-permalink: recipes
+permalink: experiments
 folder: docs
 ---
 

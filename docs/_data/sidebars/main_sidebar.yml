@@ -25,10 +25,6 @@ entries:
       output: web, pdf
       url: experiments
 
-    - title: Build
-      output: web, pdf
-      url: build
-
     - title: Testing
       output: web, pdf
       url: testing
@@ -42,7 +38,7 @@ entries:
       output: web, pdf
 
     - title: Using the Container
-      url: usage
+      external_url: https://expfactory.github.io/expfactory/usage
       output: web, pdf
 
 

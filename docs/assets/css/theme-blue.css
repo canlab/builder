@@ -14,7 +14,7 @@ h4 {color: #808080; }
 }
 
 .nav > li.active > a {
-    background-color: #00852c;
+    background-color: #1756E8 !important;
 }
 
 .nav > li > a:hover {
