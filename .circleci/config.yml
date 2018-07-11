@@ -54,7 +54,7 @@ jobs:
             fi
             echo "Container name is ${CONTAINER_NAME}"
             # Pull experiment Factory builder
-            echo "Preparing experiment building environment"
+            echo "1. Preparing experiment building environment"
             EXPERIMENT_FOLDER=$PWD/experiments
             cd ${EXPERIMENT_FOLDER}
             for e in $(ls $PWD)
@@ -62,11 +62,18 @@ jobs:
                   EXPS="${EXPS} ${e}"
               done
             echo "Experiments for install are: ${EXPS}"
-            mkdir -p /tmp/build
-            docker run -v /tmp/build:/data -it vanessa/expfactory-builder build ${EXPS} 
-            echo "We should have a Dockerfile and startscript.sh:"
-            ls /tmp/build
-            mv /tmp/build/Dockerfile ${EXPERIMENT_FOLDER}/Dockerfile
+            echo "2. Starting the Experiment Factory builder container"
+            docker run \
+              -td \ 
+              --name expfactory-builder \
+              --rm=false \
+              --entrypoint bash vanessa/expfactory-builder 
+            docker ps
+            docker exec expfactory-builder /bin/bash /entrypoint.sh build ${EXPS} 
+            echo "3. Copy files from Docker container to host..."
+            docker cp expfactory-builder:/data/Dockerfile ${EXPERIMENT_FOLDER}/Dockerfile
+            docker cp expfactory-builder:/data/startscript.sh ${EXPERIMENT_FOLDER}/startscript.sh
+            echo "4. Building experiment container..."  
             # Build experiment docker image
             e=1 && for i in {1..5}; do
               docker build \
