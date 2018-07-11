@@ -63,11 +63,7 @@ jobs:
               done
             echo "Experiments for install are: ${EXPS}"
             echo "2. Starting the Experiment Factory builder container"
-            docker run \
-              -td \ 
-              --name expfactory-builder \
-              --rm=false \
-              --entrypoint bash vanessa/expfactory-builder 
+            docker run -td --name expfactory-builder --rm=false --entrypoint bash vanessa/expfactory-builder 
             docker ps
             docker exec expfactory-builder /bin/bash /entrypoint.sh build ${EXPS} 
             echo "3. Copy files from Docker container to host..."
