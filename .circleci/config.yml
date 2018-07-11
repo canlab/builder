@@ -62,8 +62,11 @@ jobs:
                   EXPS="${EXPS} ${e}"
               done
             echo "Experiments for install are: ${EXPS}"
-            docker run -v ${EXPERIMENT_FOLDER}:/data -it vanessa/expfactory-builder build ${EXPS} 
-            mv ../Dockerfile ${EXPERIMENT_FOLDER}/Dockerfile
+            mkdir -p /tmp/build
+            docker run -v /tmp/build:/data -it vanessa/expfactory-builder build ${EXPS} 
+            echo "We should have a Dockerfile and startscript.sh:"
+            ls /tmp/build
+            mv /tmp/build/Dockerfile ${EXPERIMENT_FOLDER}/Dockerfile
             # Build experiment docker image
             e=1 && for i in {1..5}; do
               docker build \
