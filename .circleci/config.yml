@@ -55,13 +55,15 @@ jobs:
             echo "Container name is ${CONTAINER_NAME}"
             # Pull experiment Factory builder
             echo "Preparing experiment building environment"
-            cd experiments/
+            EXPERIMENT_FOLDER=$PWD/experiments
+            cd ${EXPERIMENT_FOLDER}
             for e in $(ls $PWD)
               do
                   EXPS="${EXPS} ${e}"
               done
             echo "Experiments for install are: ${EXPS}"
-            docker run -v $PWD:/data -it vanessa/expfactory-builder build ${EXPS} 
+            docker run -v ${EXPERIMENT_FOLDER}:/data -it vanessa/expfactory-builder build ${EXPS} 
+            mv ../Dockerfile ${EXPERIMENT_FOLDER}/Dockerfile
             # Build experiment docker image
             e=1 && for i in {1..5}; do
               docker build \
