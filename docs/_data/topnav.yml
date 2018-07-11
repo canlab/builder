@@ -1,0 +1,26 @@
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: Quick Links
+      folderitems:
+        - title: The Scientific Filesystem
+          external_url: https://sci-f.github.io
+        - title: Publication
+          external_url: https://academic.oup.com/gigascience/article/7/5/giy023/4931737
+        - title: Github
+          external_url: https://github.com/sci-f/builder
+        - title: The Scientific Filesystem Builder (blog post)
+          external_url: https://vsoch.github.io/2018/scientific-filesystem-builder/
+    - title: Support
+      folderitems:
+        - title: Ask a Question
+          external_url: https://github.com/sci-f/builder/issues
+
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: News
+      url: /blog

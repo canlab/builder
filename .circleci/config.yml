@@ -79,6 +79,7 @@ jobs:
             docker stop expfactory-builder
             docker rm expfactory-builder
             echo "4. Building experiment container..."  
+            cat ${EXPERIMENT_FOLDER}/Dockerfile
             # Build experiment docker image
             e=1 && for i in {1..5}; do
               docker build \
