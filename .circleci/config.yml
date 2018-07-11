@@ -61,6 +61,12 @@ jobs:
               do
                   EXPS="${EXPS} ${e}"
               done
+            # Add experiments from experiments.txt
+            if [ -f "../experiments.txt" ]
+              then
+                ADDITIONAL=$(cat ../experiments.txt);
+                EXPS="${EXPS} ${ADDITIONAL}";            
+              fi
             echo "Experiments for install are: ${EXPS}"
             echo "2. Starting the Experiment Factory builder container"
             docker run -td --name expfactory-builder --rm=false --entrypoint bash vanessa/expfactory-builder 
