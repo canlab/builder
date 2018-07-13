@@ -35,9 +35,9 @@ This simple setup will ensure your software is packaged, tested, and ready for u
 
 ## Getting Started
 
- - [1. Clone the Repository](/setup): The first step is to clone this repository to your Github account.
- - [2. Add Experiments](/experiments): meaning that you can install your own (local folders), or from the tested library on Github.
- - [3. Test and Deploy](/testing): Once you push to Github, you will need to connect to a Continuous Integration service, which will use the template to build, test, and deploy the experiment container! Once on Docker Hub, it is available for others to use. ([CircleCI](https://circleci.com/gh/expfactory/builder/) is used for this repository.
+ - [1. Clone the Repository]({{ site.github.url }}/setup): The first step is to clone this repository to your Github account.
+ - [2. Add Experiments]({{ site.github.url }}/experiments): meaning that you can install your own (local folders), or from the tested library on Github.
+ - [3. Test and Deploy]({{ site.github.url }}/testing): Once you push to Github, you will need to connect to a Continuous Integration service, which will use the template to build, test, and deploy the experiment container! Once on Docker Hub, it is available for others to use. ([CircleCI](https://circleci.com/gh/expfactory/builder/) is used for this repository.
 
 
 We will have more documentation for developers, and integration with LabJS shortly!
@@ -45,8 +45,8 @@ We will have more documentation for developers, and integration with LabJS short
 ## Continued Development
 After setup, you will still want to add new features and otherwise update your software. But since others are likely using it, you need to do this carefully! Here we will give some advice to do this.
 
- - [Github Development](/development): if you aren't familiar with the Github flow to checkout branches for new features and changes.
- - [Using the Container](/usage): How to interact with the SCIF in your container, after you've developed it.
+ - [Github Development]({{ site.github.url }}/development): if you aren't familiar with the Github flow to checkout branches for new features and changes.
+ - [Using the Container]({{ site.github.url }}/usage): How to interact with the SCIF in your container, after you've developed it.
 
 ## Additional Resources
  - [https://sci-f.github.io](https://sci-f.github.io) Scientific Filesystem documentation base
