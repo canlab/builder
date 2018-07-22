@@ -21,9 +21,10 @@ stroop tower-of-london
 ```
 
 ## LabJS
-We will have an official documentation page coming shortly, but for now you can use the [LabJS builder](http://labjs.readthedocs.io/en/latest/learn/builder/) and select the Experiment Factory export option. You can then extract the finished experiment into a subfolder of `experiments` also in this repository.
+You can use the [LabJS builder](http://labjs.readthedocs.io/en/latest/learn/builder/) and select the Experiment Factory export option. You can then extract the finished experiment into a subfolder of `experiments` also in this repository. For a full tutorial, see [this page](https://expfactory.github.io/expfactory/integration-labjs).
 
 ## Custom Experiment
+
 If you want to develop your own experiment, see the [complete documentation](https://expfactory.github.io/expfactory/contribute#contribute-an-experiment) for how to do this. You will want to do the following:
 
  1. Develop the experiment locally, per the instructions above.
@@ -31,6 +32,11 @@ If you want to develop your own experiment, see the [complete documentation](htt
  
 and then continue on to connecting your repository to CircleCI and Docker Hub.
 
+## Examples
+Here are a few examples of what various set ups can look like:
+
+ - [The LabJS Builder](https://expfactory.github.io/expfactory/integration-labjs) is an example of the builder that will install a LabJS experiment folder in addition to experiments from the library.
+ - [The Experiment Factory Containers](https://www.github.com/expfactory-containers) has examples of build repositories (for example, [container-stroop](https://github.com/expfactory-containers/container-stroop) deploys two stroop tasks to the Docker Hub container [vanessa/expfactory-container-stroop](https://hub.docker.com/r/vanessa/expfactory-container-stroop/tags/) and includes examples for analyzing the data.
 
 ## Frequently asked Questions
 
@@ -40,4 +46,4 @@ Yes, of course?
 
 > What should I do next?
 
-Once you are done with your experiment definition, you should move on to [connect to testing](/testing) where you can build and deploy your container.
+Once you get here, you should have a cloned builder repository with experiments listed in an `experiments.txt` file and/or your own experiment folders in an `experiments` folder within. Once you are done with this experiment definition, you should move on to [connect to testing](testing) where you can build and deploy your container.
