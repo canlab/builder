@@ -82,3 +82,5 @@ git push origin master
 ```
 
 More instructions for Github are provided in the [Development](development) docs. This should be substantial for the initial setup of the repository. Since the entire thing is essentially under development, we will just be working with the master (default) branch, so you shouldn't need to worry about checking out new branches.
+
+Next, you should add [experiments](experiments) to your builder repository!
