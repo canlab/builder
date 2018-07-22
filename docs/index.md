@@ -30,8 +30,17 @@ This simple setup will ensure your software is packaged, tested, and ready for u
 ## Background
  
  - [The Experiment Factory](https://expfactory.github.io/): Familiarize with the work of the Experiment Factory, a set of tools to empower you to create reproducible experiment containers to collect your behavioral data.
- - [Experiment Library](https://expfactory.github.io/experiments): If you don't want to create your own experiment, you can select one from our experiment library.
  - [LabJS](https://github.com/FelixHenninger/lab.js): is a good start for a new developer, as one of the export formats is for an experiment factory folder.
+ - [JSPsych](https://www.jspsych.org/): is a beautiful JavaScript library for creating behavioral paradigms, the basis for many of the Experiment Factory experiments.
+ - [Experiment Library](https://expfactory.github.io/experiments): If you don't want to create your own experiment, you can select one from our experiment library.
+ - [Experiment Containers](https://www.github.com/expfactory-containers) has examples of complete build repositories. If you want help to create and contribute one, please ask.
+
+
+## Examples
+
+ - [The LabJS Builder](https://expfactory.github.io/expfactory/integration-labjs) is an example of the builder that will install LabJS experiment folders, in addition to an experiment from the library.
+ - [The Experiment Factory Containers](https://www.github.com/expfactory-containers) has examples of build repositories (for example, [container-stroop](https://github.com/expfactory-containers/container-stroop) deploys two stroop tasks to the Docker Hub container [vanessa/expfactory-container-stroop](https://hub.docker.com/r/vanessa/expfactory-container-stroop/tags/) and includes examples for analyzing the data.
+
 
 ## Getting Started
 
