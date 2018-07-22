@@ -7,7 +7,7 @@ toc: false
 ---
 
 Welcome to the documentation for the [Experiment Container Builder]({{ site.repo }}) template. This documentation
-and associated repository will help you to turn your static behavioral experiments into tested, reproducible containers to share with others, or you can select from our [container library](https://expfactory.github.io/experiments).
+and associated repository will help you to turn your static behavioral experiments into tested, reproducible containers to share with others, or you can select from our [experiment library](https://expfactory.github.io/experiments).
 
 We are going to be combining three technologies to handle each of the following:
 
