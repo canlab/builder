@@ -33,6 +33,26 @@ entries:
       output: web, pdf
       url: testing
 
+  - title: Templates and Examples
+    output: web, pdf
+    folderitems:
+
+    - title: Container Library
+      external_url: https://www.github.com/expfactory-containers
+      output: web, pdf
+
+    - title: Experiment Library
+      external_url: https://www.github.com/expfactory-experiments
+      output: web, pdf
+
+    - title: Labjs Container Builder
+      external_url: https://www.github.com/expfactory/builder-labjs
+      output: web, pdf
+
+    - title: The Experiment Container Builder
+      external_url: https://www.github.com/expfactory/builder
+      output: web, pdf
+
   - title: Continued Development
     output: web, pdf
     folderitems:
@@ -43,24 +63,4 @@ entries:
 
     - title: Using the Container
       external_url: https://expfactory.github.io/expfactory/usage
-      output: web, pdf
-
-  - title: Templates and Examples
-    output: web, pdf
-    folderitems:
-
-    - title: Container Library
-      external_url: https://www.github.com/expfactory-containers
-      output: web, pdf
-
-    - title: Experiment Library (Github)
-      external_url: https://www.github.com/expfactory-experiments
-      output: web, pdf
-
-    - title: Labjs Container Builder
-      external_url: https://www.github.com/expfactory/builder-labjs
-      output: web, pdf
-
-    - title: The Experiment Container Builder (CI)
-      external_url: https://www.github.com/expfactory/builder
       output: web, pdf
